@@ -8,8 +8,11 @@ This toolset contains two primary parts:
 
 ## Installation & Environment Preparation
 Install GCC, make and perl if needed:
-`sudo apt install gcc make perl`
+```
+sudo apt install gcc make perl
+```
 
+### Get Tor Browser Bundle and Verify
 Download the current version of the tor browser bundle(your version will be different):
 ```
 wget https://www.torproject.org/dist/torbrowser/10.0.16/tor-browser-linux64-10.0.16_en-US.tar.xz
@@ -20,6 +23,20 @@ Grab the OpenPGP signature:
 wget https://www.torproject.org/dist/torbrowser/10.0.16/tor-browser-linux64-10.0.16_en-US.tar.xz.asc
 ```
 
+Import the Tor Browser Developers signing key:
+```
+gpg --auto-key-locate nodefault,wkd --locate-keys torbrowser@torproject.org
+```
+
+Save it to a file:
+```
+gpg --output ./tor.keyring --export 0xEF6E286DDA85EA2A4BA7DE684E2C6E8793298290
+```
+
+Finally, verify the signature:
+```
+gpgv --keyring ./tor.keyring ./tor-browser-linux64-10.0.16_en-US.tar.xz.asc  ./tor-browser-linux64-10.0.16_en-US.tar.xz
+```
 
 ## Recommended Usage:
 
