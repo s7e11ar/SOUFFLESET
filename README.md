@@ -11,10 +11,14 @@ Install GCC, make and perl if needed:
 `sudo apt install gcc make perl`
 
 Download the current version of the tor browser bundle(your version will be different):
-`wget https://www.torproject.org/dist/torbrowser/10.0.16/tor-browser-linux64-10.0.16_en-US.tar.xz`
+```
+wget https://www.torproject.org/dist/torbrowser/10.0.16/tor-browser-linux64-10.0.16_en-US.tar.xz
+```
 
 Grab the OpenPGP signature:
-`wget https://www.torproject.org/dist/torbrowser/10.0.16/tor-browser-linux64-10.0.16_en-US.tar.xz.asc`
+```
+wget https://www.torproject.org/dist/torbrowser/10.0.16/tor-browser-linux64-10.0.16_en-US.tar.xz.asc
+```
 
 
 ## Recommended Usage:
