@@ -24,7 +24,7 @@ tbselenium
 9. [Handling Tcpdump Output in Python[forum]](https://stackoverflow.com/questions/17904231/handling-tcpdump-output-in-python)
 10. [HTTP GET & 200 in 1 filter[forum]](https://osqa-ask.wireshark.org/questions/9024/http-get-200-in-1-filter/)
 11. [use Python + Selenium to Automate Web Timing](https://mkaz.blog/code/use-python-selenium-to-automate-web-timing/)
-12. [Ping Multiple IPs Using Bash?[forum](https://askubuntu.com/questions/413367/ping-multiple-ips-using-bash)
+12. [Ping Multiple IPs Using Bash?[forum]](https://askubuntu.com/questions/413367/ping-multiple-ips-using-bash)
 13. [Curl Man Page](https://curl.se/docs/manpage.html)
 14. [meek Wiki](https://gitlab.torproject.org/legacy/trac/-/wikis/doc/meek)
 15. [webfp/tor-browser-selenium: Tor Browser automation with Selenium](https://github.com/webfp/tor-browser-selenium)
