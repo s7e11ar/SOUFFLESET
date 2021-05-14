@@ -37,12 +37,40 @@ Finally, verify the signature:
 ```
 gpgv --keyring ./tor.keyring ./tor-browser-linux64-10.0.16_en-US.tar.xz.asc  ./tor-browser-linux64-10.0.16_en-US.tar.xz
 ```
+### Install Tor, Service Dependencies, and Other Tools We'll Need
+```
+sudo apt install tor tor-geoipdb torsocks privoxy curl whois python3 python-dev python3-pip software-properties-common
+```
+Install tbselenium with pip:
+```
+pip3 install tbselenium
+```
+Get Geckodriver
+```
+wget https://github.com/mozilla/geckodriver/releases/download/v0.29.0/geckodriver-v0.29.0-linux64.tar.gz
+tar -xvzf geckodriver-v0.29.0-linux64.tar.gz
+sudo mv geckodriver /usr/local/bin
+```
+
 
 ## Recommended Usage:
-
-## Requirements:
-Python 3.8
-tbselenium
+Clone this repo:
+```
+git clone https://github.com/s7e11ar/SOUFFLESET.git
+cd SOUFFLESET
+```
+Start tor if it isn't running:
+```
+tor
+```
+Run headless.py (with the path to your Tor Browser executable):
+```
+python3 headless.py /home/[your name]/Downloads/tor-browser_en-US/
+```
+Run ttfb_check.sh:
+```
+./ttfb_check.sh
+```
 
 ## References: Resources helpful in building these tools
 1. [Tor Project](https://www.torproject.org)
