@@ -45,13 +45,20 @@ Install tbselenium with pip:
 ```
 pip3 install tbselenium
 ```
+Install PyVirtualDisplay with Pip3
+```
+pip3 install pyvirtualdisplay
+```
 Get Geckodriver
 ```
-wget https://github.com/mozilla/geckodriver/releases/download/v0.29.0/geckodriver-v0.29.0-linux64.tar.gz
-tar -xvzf geckodriver-v0.29.0-linux64.tar.gz
+wget https://github.com/mozilla/geckodriver/releases/download/v0.30.0/geckodriver-v0.30.0-linux64.tar.gz
+tar -xvzf geckodriver-v0.30.0-linux64.tar.gz
 sudo mv geckodriver /usr/local/bin
 ```
-
+Install X Virtual Frame Buffer (xvfb)
+```
+sudo apt install xvfb
+```
 
 ## Recommended Usage:
 Clone this repo:
